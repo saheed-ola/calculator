@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Js Calculator</title>
 </head>
 <body>
-<script src="index.js"></script>
+    <form>
+        value 1: <input type="text" id="value1"><br>
+        operator: 
+        <select name="" id="operator">
+            <option value="add">+</option>
+            <option value="min">-</option>
+            <option value="div">/</option>
+            <option value="mul">*</option>
+
+        </select><br>
+        value 2: <input type="text" id="value2"><br>
+        <button type="button" onclick="calc()">Answer</button>
+
+    </form>
+
+    <div id="result"></div>
+    <!-- <input type="" id="result"> -->
+    <!-- <textarea name="" id="result" cols="5" rows="1"></textarea> -->
 </body>
+<script src="index.js"></script>
 </html>

@@ -1,7 +1,20 @@
-    var MyName = ('Abubakar saheed olamide')
-    var MyHeight = ('5 ft')
-    var MyCountry = ('Nigeria')
+   function calc(){
+    var a = parseInt(document.querySelector("#value1").value);
+    var b = parseInt(document.querySelector("#value2").value);
+    var op = (document.querySelector("#operator").value);
+    var Answer;
 
-    document.write('My name is '+ MyName)
-    document.write('<br> My height '+ MyHeight)
-    document.write("<br>I am from "+ MyCountry)
+    if(op == "add"){ 
+      Answer = a+b;
+    }else if (op == "min"){
+      Answer = a-b;
+    }
+    else if (op == "div"){
+      Answer = a/b;
+    }
+    else if (op == "mul"){
+      Answer = a*b;
+    }
+
+    document.querySelector("#result").innerHTML = Answer;
+   }
